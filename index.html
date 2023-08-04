@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Responsive</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">Soft Landding</div>
+      <div class="hamburger" id="hamburger" onclick="toggle()">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <nav id="navbar" class="nav-bar">
+        <ul>
+          <li>
+            <a href="" class="">Home</a>
+          </li>
+          <li>
+            <a href="" class="">Feature</a>
+          </li>
+          <li>
+            <a href="" class="">Price</a>
+          </li>
+          <li>
+            <a href="" class="">About</a>
+          </li>
+          <li>
+            <a href="" class="">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div id="main">
+      <div id="page">
+        <div id="box"></div>
+      </div>
+    </div>
+    <script>
+      // const hamburger = document.querySelector('.hamburger');
+      // hamburger.onClick = function () {
+      //   console.log('hello');
+      //   const navbar = document.querySelector('#navbar');
+      //   navbar.classList.toggle('hide');
+      // };
+      function toggle() {
+        console.log('hello');
+        const navbar = document.querySelector('#navbar');
+        const hamburger = document.querySelector('#hamburger');
+        navbar.classList.toggle('active');
+        hamburger.classList.toggle('openHamburger');
+      }
+    </script>
+  </body>
+</html>
